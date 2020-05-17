@@ -18,7 +18,7 @@ body {
     background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
     background-size: cover;
     background-position: center;
-    font-family: Lato;
+    font-family: 'Teko',sans-serif;
     font-weight: 300;
     position: relative;
     height: 100vh;
@@ -87,14 +87,14 @@ body {
     color: #fff;
     width: 40%;
     margin: 0 auto;
-    padding: 12px;
+    padding: 20px 15px;
     text-align: center;
 }
 
 .player-current-label {
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 16px;
     color: #222;
 }
 
