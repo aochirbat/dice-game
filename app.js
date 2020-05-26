@@ -2,11 +2,12 @@ var activePlayer;
 var scores; 
 var roundScore;
 var isNewGame;
+var limitScore;
 newGame();
 var diceNone = document.querySelector('.dice');
 function newGame(){
     //Хэдэн оноогоор тоглох.
-    // var limitScore = prompt('Хэдэн оноогоор тоглох вэ?');
+    limitScore = prompt('Хэдэн оноогоор тоглох вэ?');
     isNewGame = true;
     //Тоглогчийн ээлжийг хадгалах хувьсагч
     activePlayer = 0;
@@ -55,7 +56,7 @@ document.querySelector('.btn-hold').addEventListener('click' , function(){
     //Тоглогчын цугуулсан оноог хадгалах хэсэг рүү хийх.
        scores[activePlayer] = scores[activePlayer] + roundScore;
        document.getElementById('current-' + activePlayer).textContent = scores[activePlayer];
-       if(scores[activePlayer] >= 10 ){
+       if(scores[activePlayer] >= limitScore ){
            isNewGame = false;
         document.getElementById('name-' + activePlayer).textContent ='Winner!!!';
         document.querySelector('.player-'+activePlayer+'-panel').classList.add('winner');
