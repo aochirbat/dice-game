@@ -153,7 +153,7 @@ i {
     left: 50%;
     top: 300px;
     transform: translateX(-50%);
-    height: 100px;
+    height: 90px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 .winner { background-color: #f7f7f7; }
